@@ -1,20 +1,28 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Engineering Portfolio Platform
 
-# Run and deploy your AI Studio app
+A performant, interactive engineering portfolio engine engineered utilizing React, Vite, Tailwind CSS, and Framer Motion modules to architect a responsive architectural canvas.
 
-This contains everything you need to run your app locally.
+## 🚀 Key Production Architectures
 
-View your app in AI Studio: https://ai.studio/apps/2e756342-0df3-49e1-a6d7-a83826d1554d
+The framework integrates high-fidelity design modules mapped directly into end-to-end full-stack architectures:
 
-## Run Locally
+*   **Real-Time DevChat Engine**: Instant messaging module utilizing full-stack state coordination frameworks for fluid user synchronizations.
+*   **IMS Enterprise Core**: High-throughput inventory asset router focused on low-threshold telemetry tracking and stock-level optimization.
+*   **AuthShield Authentication System**: Secure verification pipeline engineered with strict middleware interceptors for state isolation protocols.
+*   **HabitForge Tracker**: Productivity analytics layout targeted at consistency grids and transactional state persistence layers.
+*   **Dynamic URL Shortener Platform**: Route optimization system specialized in deterministic data mappings and immediate key lookups.
 
-**Prerequisites:**  Node.js
+## 🛠️ Technological Stacking Matrix
 
+| Tier | Technologies Utilized |
+| :--- | :--- |
+| **Frontend Framework** | React.js 19+, Vite, Tailwind CSS |
+| **Animation Core** | Motion (`motion/react`), Lucide React |
+| **Data Pipelines** | MongoDB, Express.js, Node.js API layers |
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ⚙️ Engineering & Development Environment
+
+### 1. Dependency Resolution
+Execute the target packaging sequence via npm:
+```bash
+npm install

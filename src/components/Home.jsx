@@ -99,7 +99,7 @@ export default function Home({ setActiveTab }) {
               <div className="w-full h-full rounded-[3rem] overflow-hidden shadow-xl bg-slate-100">
                 <img
                   className="w-full h-full object-cover"
-                  // src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsyKsff4JLaldFl4lRc6uldAIu-AIqTfULTkVTxu51eVvOBG_rYvggznE-gNMU5o6wyhGsr0jsOSTvo9kHrXHt8m1stohlBgAVxaysc_0V_q5leEy8orNK_UuaQTwaW2nsElrr4FOJWYCUKAcNzh97ePhPw-lONgq42XpDhxfkPxeTU1BZG1RsnLY-s4C-E7LLqvgV_ri-T02jblb2sz_2sGW_AUCA8PtlkZMW9zBUqi1E2q4LZlOI_E3aLH9fLUbfKDV7XNmhwFw"
+                  src="https://images.unsplash.com/photo-1497215641119-bbe6d71ebaae?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Ahmed Abdullah portrait"
                   referrerPolicy="no-referrer"
                 />

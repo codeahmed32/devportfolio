@@ -57,7 +57,7 @@ export default function About({ setActiveTab }) {
           <div className="w-full lg:w-1/2 space-y-6 text-left">
             <h1 className="text-4xl md:text-5xl font-extrabold text-[#FFFCF2] tracking-tight leading-tight">
               Crafting Digital Excellence Through <br />
-              <span className="text-[#EB5E28] italic font-serif font-normal">Logic, Soul &amp; Creativity </span>
+              <span className="text-[#EB5E28] italic font-serif font-normal">Logic, Design &amp; Creativity </span>
             </h1>
 
             <p className="text-xs md:text-sm text-[#CCC5B9] leading-relaxed max-w-xl font-medium">
@@ -90,7 +90,7 @@ export default function About({ setActiveTab }) {
                 <img
                   className="w-full h-full object-cover transition-transform duration-100 ease-out"
                   style={{ transform: `scale(${heroZoom})` }}
-                  src="https://images.unsplash.com/photo-1497215641119-bbe6d71ebaae?q=80&w=687&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1551590192-8070a16d9f67?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                   alt="Minimal Studio Workspace"
                   referrerPolicy="no-referrer"
                 />

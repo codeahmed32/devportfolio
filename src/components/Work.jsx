@@ -117,6 +117,8 @@ export default function Work({ setActiveTab }) {
       </section>
 
       {/* 3. PROJECT GRID */}
+
+
       <section className="max-w-7xl mx-auto px-6 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimatePresence mode="popLayout">
@@ -128,7 +130,7 @@ export default function Work({ setActiveTab }) {
                 exit={{ opacity: 0, scale: 0.92 }}
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
                 key={project.title}
-                className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col justify-between group"
+                className="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col justify-between group"
               >
                 <div>
                   {/* Image with overlay action */}

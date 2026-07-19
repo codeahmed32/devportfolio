@@ -26,7 +26,7 @@ export default function App() {
     <div className="min-h-screen bg-surface-bright flex flex-col justify-between overflow-x-hidden">
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
 
-      <main className="flex-grow pt-24">
+      <main>
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}

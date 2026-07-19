@@ -22,18 +22,21 @@ export default function Footer({ activeTab, setActiveTab }) {
   ];
 
   return (
-    <footer className="bg-white py-12 px-6 md:px-16" id="app-footer">
+    /* Background changed to #252422 (Main Dark) with a very clean top border to separate content layers */
+    <footer className="bg-[#252422] py-12 px-6 md:px-16 border-t border-white/[0.05]" id="app-footer">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         
         {/* Left Section: Branding & Copyright */}
         <div className="space-y-2 text-center md:text-left">
           <button
             onClick={() => handleLinkClick('home')}
-            className="font-sans text-xl font-extrabold text-[#013220] hover:opacity-80 transition-all cursor-pointer"
+            /* Logo updated to #FFFCF2 (Off-White) */
+            className="font-sans text-xl font-extrabold text-[#FFFCF2] hover:text-[#EB5E28] transition-all cursor-pointer"
           >
             DevPortfolio
           </button>
-          <p className="text-xs text-slate-500 font-medium">
+          {/* Muted text updated to #CCC5B9 (Light Taupe) */}
+          <p className="text-xs text-[#CCC5B9]/60 font-medium">
             © {new Date().getFullYear()} Ahmed Abdullah. All Rights Reserved.
           </p>
         </div>
@@ -44,8 +47,9 @@ export default function Footer({ activeTab, setActiveTab }) {
             <button
               key={item.id}
               onClick={() => handleLinkClick(item.id)}
-              className={`text-xs font-semibold tracking-wide hover:text-[#013220] transition-colors cursor-pointer relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#013220] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 ${
-                activeTab === item.id ? 'text-[#013220] after:scale-x-100' : 'text-slate-500'
+              /* Bottom-line slider effect shifted to #EB5E28 (Orange Accent) and default state text adjusted to #CCC5B9 */
+              className={`text-xs font-bold tracking-wide hover:text-[#EB5E28] transition-colors cursor-pointer relative py-1 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#EB5E28] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 ${
+                activeTab === item.id ? 'text-[#EB5E28] after:scale-x-100' : 'text-[#CCC5B9]'
               }`}
             >
               {item.label}
@@ -64,7 +68,8 @@ export default function Footer({ activeTab, setActiveTab }) {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 text-slate-400 hover:text-[#013220] hover:bg-slate-50 rounded-full transition-all"
+                  /* Icons change smoothly from light taupe to signature orange with dark hover state */
+                  className="p-2 text-[#CCC5B9] hover:text-[#EB5E28] hover:bg-[#403D39] rounded-full transition-all"
                   aria-label={social.label}
                 >
                   <Icon className="w-4 h-4" />
@@ -73,11 +78,13 @@ export default function Footer({ activeTab, setActiveTab }) {
             })}
           </div>
 
-          <div className="w-[1px] h-6 bg-slate-200 hidden sm:block" />
+          {/* Divider updated to match dark theme guidelines */}
+          <div className="w-[1px] h-6 bg-white/10 hidden sm:block" />
 
+          {/* Back to Top button updated to #403D39 structure with dynamic hover scaling */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="p-2 border border-slate-200 hover:bg-slate-50 rounded-full text-[#013220] transition-colors shadow-sm cursor-pointer"
+            className="p-2 bg-[#403D39] hover:bg-[#4e4a45] border border-white/10 rounded-full text-[#FFFCF2] hover:text-[#EB5E28] transition-all shadow-sm cursor-pointer active:scale-95"
             title="Back to Top"
           >
             <ArrowUp className="w-4 h-4" />

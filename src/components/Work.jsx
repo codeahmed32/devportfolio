@@ -92,7 +92,7 @@ export default function Work({ setActiveTab }) {
       <section className="pt-8 md:pt-16 text-center space-y-4 px-6 md:px-16">
         <span className="text-[#013220] font-bold text-xs tracking-widest uppercase block">MY WORK</span>
         <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
-          Selected Engineering Masterpieces
+          My Projects And Work Experience
         </h1>
         <p className="text-slate-500 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
           A curated collection of full-stack web applications, custom API services, and intuitive user interfaces built with React, Node.js, and MongoDB.

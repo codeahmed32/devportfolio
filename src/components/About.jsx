@@ -182,7 +182,7 @@ export default function About({ setActiveTab }) {
               </div>
             </div>
             <div className="space-y-3 pr-2">
-              <h4 className="text-base font-extrabold text-slate-900 tracking-tight">Intentional UI/UX Engineering</h4>
+              <h4 className="text-base font-extrabold text-slate-900 tracking-tight">UI/UX </h4>
               <p className="text-xs text-slate-500 leading-relaxed font-medium">
                 Design is deeply functional. I architecture design components inside precise grid vectors, optimizing spacing layouts, micro-interactions, and visual focus lines before writing a single line of frontend markup.
               </p>

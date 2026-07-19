@@ -46,10 +46,11 @@ export default function About({ setActiveTab }) {
             </div>
           </div>
 
-          {/* Right Column: Premium Minimal Office Atmosphere Image (Matching Home Page) */}
-          <div className="w-full lg:w-1/2 relative flex justify-center">
-            <div className="relative w-full max-w-[420px]">
-              <div className="overflow-hidden rounded-[2.5rem] bg-slate-50 shadow-[0_12px_40px_rgba(0,0,0,0.06)] relative z-10 border border-black/[0.04] aspect-[4/5]">
+          {/* Right Column: Balanced image container matching layout specs exactly */}
+          <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-end gap-5">
+            <div className="w-full max-w-[380px] aspect-[4/5]">
+              {/* Profile Image Container with 3xl Squircle Radius */}
+              <div className="w-full h-full rounded-[2.5rem] overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.06)] bg-slate-100 border border-black/[0.04]">
                 <img
                   className="w-full h-full object-cover"
                   src="https://images.unsplash.com/photo-1497215641119-bbe6d71ebaae?q=80&w=687&auto=format&fit=crop" 
@@ -57,24 +58,27 @@ export default function About({ setActiveTab }) {
                   referrerPolicy="no-referrer"
                 />
               </div>
+            </div>
 
-              {/* Top Right Floating Badge */}
-              <div className="absolute -right-4 top-20 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.03)] border border-black/[0.05] z-20 flex items-center gap-3">
-                <div className="bg-emerald-50 p-2 rounded-xl text-[#013220]">
+            {/* Badges Layout positioned safely underneath the media layer */}
+            <div className="w-full max-w-[380px] flex flex-col sm:flex-row gap-3">
+              {/* MERN Specialist Badge */}
+              <div className="flex-1 bg-white py-3.5 px-4 rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.01)] border border-black/[0.05] flex items-center gap-3">
+                <div className="w-8 h-8 bg-emerald-50 rounded-full flex items-center justify-center text-[#013220] shrink-0">
                   <Terminal className="w-4 h-4" />
                 </div>
-                <div className="text-left">
+                <div>
                   <p className="text-[11px] font-bold text-slate-800 leading-none">MERN Specialist</p>
                   <p className="text-[9px] text-slate-400 mt-1 font-semibold">Production Ready</p>
                 </div>
               </div>
 
-              {/* Bottom Left Floating Badge */}
-              <div className="absolute -left-4 bottom-20 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.03)] border border-black/[0.05] z-20 flex items-center gap-3">
-                <div className="bg-emerald-50 p-2 rounded-xl text-[#013220]">
+              {/* UX Strategist Badge */}
+              <div className="flex-1 bg-white py-3.5 px-4 rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.01)] border border-black/[0.05] flex items-center gap-3">
+                <div className="w-8 h-8 bg-emerald-50 rounded-full flex items-center justify-center text-[#013220] shrink-0">
                   <Compass className="w-4 h-4" />
                 </div>
-                <div className="text-left">
+                <div>
                   <p className="text-[11px] font-bold text-slate-800 leading-none">UX Strategist</p>
                   <p className="text-[9px] text-slate-400 mt-1 font-semibold">User-Centric Focus</p>
                 </div>
@@ -168,7 +172,7 @@ export default function About({ setActiveTab }) {
             </div>
           </div>
 
-          {/* Intentional UI/UX Card (Fixed & Populated with exact UI/UX Layout System) */}
+          {/* Intentional UI/UX Card */}
           <div className="md:col-span-8 bg-slate-50 p-6 rounded-[2rem] border border-black/[0.04] flex flex-col md:flex-row items-center gap-6 text-left shadow-inner">
             <div className="w-full md:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden bg-white shrink-0 shadow-xs border border-black/[0.06] relative group">
               <img
@@ -182,7 +186,7 @@ export default function About({ setActiveTab }) {
               </div>
             </div>
             <div className="space-y-3 pr-2">
-              <h4 className="text-base font-extrabold text-slate-900 tracking-tight">UI/UX </h4>
+              <h4 className="text-base font-extrabold text-slate-900 tracking-tight">Intentional UI/UX Engineering</h4>
               <p className="text-xs text-slate-500 leading-relaxed font-medium">
                 Design is deeply functional. I architecture design components inside precise grid vectors, optimizing spacing layouts, micro-interactions, and visual focus lines before writing a single line of frontend markup.
               </p>

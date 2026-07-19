@@ -53,17 +53,17 @@ export default function Home({ setActiveTab }) {
 
   return (
     <div className="w-full bg-[#fcfcfc] space-y-28 pb-20 text-left">
-
+      
       {/* 1. HERO SECTION */}
       <section className="max-w-[1300px] mx-auto pt-16 pb-12 px-8 lg:px-16 relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
+          
           {/* Left Text Box */}
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-block px-4 py-1.5 rounded-md bg-[#e2f3ee] text-[#013220] text-[10px] font-bold tracking-wider">
               AVAILABLE FOR HIRE
             </div>
-
+            
             <div className="space-y-1">
               <span className="text-sm font-medium text-slate-400 block">Hello, I Am</span>
               <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-none">
@@ -96,9 +96,9 @@ export default function Home({ setActiveTab }) {
           <div className="lg:col-span-5 flex flex-col items-center lg:items-end gap-6">
             <div className="w-full max-w-[380px] aspect-[4/5]">
               {/* Profile Image Container */}
-              <div className="w-full aspect-square md:aspect-[4/5] rounded-[3rem] overflow-hidden shadow-xl bg-[#001f18] border border-emerald-900/30 relative">
+              <div className="w-full h-full rounded-[3rem] overflow-hidden shadow-xl bg-slate-100">
                 <img
-                  className="w-full h-full object-cover object-center opacity-85 mix-blend-luminosity hover:opacity-100 hover:mix-blend-normal transition-all duration-500"
+                  className="w-full h-full object-cover"
                   src="https://images.unsplash.com/photo-1497215641119-bbe6d71ebaae?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Ahmed Abdullah portrait"
                   referrerPolicy="no-referrer"
@@ -187,7 +187,7 @@ export default function Home({ setActiveTab }) {
       {/* 3. SKILLS SECTION */}
       <section className="max-w-[1300px] mx-auto px-8 lg:px-16 py-8">
         <div className="flex flex-col lg:flex-row items-center gap-16">
-
+          
           {/* Left Side: 4 White Cards for Gauges */}
           <div className="w-full lg:w-1/2 grid grid-cols-2 gap-6">
             {skills.map((skill) => {
